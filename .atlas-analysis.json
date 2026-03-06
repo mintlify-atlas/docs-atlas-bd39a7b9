@@ -1,0 +1,134 @@
+{
+  "projectType": "saas",
+  "projectName": "Ultimate Fitness",
+  "projectDescription": "A comprehensive fitness management platform connecting trainers and clients for personalized nutrition plans, workout routines, and progress tracking.",
+  "theme": "almond",
+  "primaryColor": "#10b981",
+  "lightColor": "#34d399",
+  "darkColor": "#059669",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "features"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "users/registration",
+              "users/dashboard",
+              "users/workouts",
+              "users/nutrition",
+              "users/subscription"
+            ]
+          },
+          {
+            "group": "Trainer Guide",
+            "pages": [
+              "trainers/overview",
+              "trainers/clients",
+              "trainers/diet-management",
+              "trainers/workout-management"
+            ]
+          },
+          {
+            "group": "Admin Guide",
+            "pages": [
+              "admin/overview",
+              "admin/user-management",
+              "admin/trainer-management",
+              "admin/content-management"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker-setup",
+              "deployment/configuration",
+              "deployment/production"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/authentication/login",
+              "api/authentication/register"
+            ]
+          },
+          {
+            "group": "Users",
+            "pages": [
+              "api/users/profile",
+              "api/users/subscription"
+            ]
+          },
+          {
+            "group": "Workouts",
+            "pages": [
+              "api/workouts/exercises",
+              "api/workouts/routines"
+            ]
+          },
+          {
+            "group": "Nutrition",
+            "pages": [
+              "api/nutrition/foods",
+              "api/nutrition/diets",
+              "api/nutrition/meals"
+            ]
+          },
+          {
+            "group": "Trainers",
+            "pages": [
+              "api/trainers/clients",
+              "api/trainers/assignments"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "api/admin/users",
+              "api/admin/content"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-role user system (Admin, Trainer, Client)",
+    "Custom diet plans and meal tracking",
+    "Personalized workout routines and exercise library",
+    "Trainer-client assignment and management",
+    "Premium subscription system",
+    "Progress tracking and calendar integration",
+    "Blog for fitness articles and tips",
+    "REST API built with Symfony and API Platform"
+  ],
+  "publicApiSurface": [
+    "POST /api/login - User authentication",
+    "POST /api/register - User registration",
+    "GET /api/usuarios/me - Get current user profile",
+    "GET /api/custom/dietas - Get user's diet plans",
+    "GET /api/custom/entrenamientos - Get user's workouts",
+    "GET /api/custom/ejercicios - Get exercise library",
+    "POST /api/entrenador/crear-dieta - Create diet plan (trainer)",
+    "POST /api/entrenador/crear-entrenamiento - Create workout (trainer)",
+    "GET /api/entrenador/mis-clientes - Get trainer's clients",
+    "GET /api/admin/usuarios - Manage users (admin)",
+    "POST /api/blog - Create blog post",
+    "GET /api/alimentos - Get food database"
+  ]
+}
